@@ -1,9 +1,12 @@
+import Navbar from "../../components/navbar/Navbar";
+import Slider from "../../components/slider/Slider";
 
 
 const Home = () => {
     return (
         <div>
-            <h1 className='spaceGrotesk text-5xl text-center font-bold'>EVO AUTOS</h1>
+            <Navbar></Navbar>,
+            <Slider></Slider>
         </div>
     );
 };
