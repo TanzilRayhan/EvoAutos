@@ -15,10 +15,10 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Slider = () => {
   return (
     <>
-    <div className='max-w-5xl spaceGrotesk mx-auto text-center'>
-    <h1 className=' text-5xl text-center font-bold pt-5'>Welcome To EvoAutos</h1>
-    <p className='font-semibold pt-5 pb-10'>
-An automotive brand shop is a retail establishment dedicated to showcasing and selling vehicles from a specific automotive brand. The showroom often features a range of vehicles, from compact cars to SUVs and luxury vehicles, allowing potential buyers to get a firsthand look at the design, performance, and innovations of the brand. Knowledgeable staff members are usually present to assist customers, providing information, answering questions, and facilitating test drives.</p>
+    <div className='max-w-5xl spaceGrotesk mx-auto px-5 lg:px-0 text-center'>
+    <h1 className='text-4xl lg:text-6xl text-center font-bold pt-5 text-blue-950'>Welcome To EvoAutos</h1>
+    <p className='text-xs lg:text-base font-semibold pt-5 pb-10 text-slate-600'>
+An automotive brand shop is a retail establishment dedicated to showcasing and selling vehicles from a specific automotive brand. The showroom often features a range of vehicles, from compact cars to SUVs and luxury vehicles, allowing potential buyers to get a firsthand look at the design, performance, and innovations of the brand.</p>
     </div>
       <Swiper
         spaceBetween={30}
