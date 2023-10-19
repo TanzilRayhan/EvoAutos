@@ -8,22 +8,29 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import ErrorPage from "./pages/errorpage/ErrorPage";
 import AuthProvider from "./providers/AuthProvider";
+import Root from "./layout/Root";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
-    children: [],
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+    ],
   },
-  {
-    path: "/login",
-    element: <Login></Login>,
-  },
-  {
-    path: "/register",
-    element: <Register></Register>,
-  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
