@@ -6,15 +6,12 @@ const BrandCard = ({ brandData }) => {
     return (
         <div>
             <div>
-                <div className="card card-compact w-full shadow-xl bg-slate-200">
+                <div className="card card-compact w-full shadow-xl bg-slate-300">
                     <figure >
-                        <img className="w-full p-4 h-96" src={brandImage}></img>
+                        <img className="w-full p-6 h-96" src={brandImage}></img>
                     </figure>
-                    <div className="card-body">
-
-                        <h2 className="card-title">{brandName}</h2>
-                       
-                    
+                    <div className="flex justify-center items-center pb-5">
+                        <button className="btn glass w-full text-2xl font-extrabold">{brandName}</button>
                     </div>
                 </div>
             </div>

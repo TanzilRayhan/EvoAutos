@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Register = () => {
@@ -75,6 +75,12 @@ const Register = () => {
               <div className="form-control mt-6">
                 <button className="btn btn-primary bg-slate-600">Register</button>
               </div>
+              <p className="text-white">
+              Already Have an Account? Please{" "}
+              <Link to="/login">
+                <button className="btn-link font-bold">Login</button>
+              </Link>
+            </p>
             </form>
           </div>
         </div>
