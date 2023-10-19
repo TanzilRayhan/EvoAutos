@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer";
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -37,7 +35,6 @@ const Register = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
       <div className="hero min-h-screen spaceGrotesk"
         style={{
           backgroundImage:
@@ -82,7 +79,6 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };

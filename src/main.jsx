@@ -9,6 +9,7 @@ import Register from "./pages/register/Register";
 import ErrorPage from "./pages/errorpage/ErrorPage";
 import AuthProvider from "./providers/AuthProvider";
 import Root from "./layout/Root";
+import AddProducts from "./pages/products/AddProducts";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch('/brand_data.json')
       },
       {
         path: "/login",
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/addProducts",
+        element: <AddProducts></AddProducts>,
       },
     ],
   },

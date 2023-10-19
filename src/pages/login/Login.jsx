@@ -46,7 +46,6 @@ const Login = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
       <div className="hero min-h-screen spaceGrotesk"
         style={{
           backgroundImage:
@@ -101,7 +100,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };
