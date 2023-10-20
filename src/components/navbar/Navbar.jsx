@@ -2,16 +2,19 @@
 import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import useTheme from "../../theme/useTheme";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleSignOut = () => {
       logOut();
   };
+  const { toggleTheme } = useTheme();
 
   const navLinks = (
     <>
       <li><NavLink className="font-bold" to="/">Home</NavLink></li>
+      <li><NavLink className="font-bold" to="/allProducts">All Products</NavLink></li>
       <li><NavLink className="font-bold" to="/addProducts">Add Products</NavLink></li>
     </>
   )
@@ -36,6 +39,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
+  {/* <button onClick={toggleTheme}>Change Theme</button> */}
   <div className="flex justify-center">
    {/* <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -63,13 +67,13 @@ const Navbar = () => {
        
       <ul tabIndex={0} className="flex items-center justify-center dropdown-content mt-3 z-[1] rounded-box">
       {user ? (
-                    <button onClick={handleSignOut} className="btn">
+                    <button onClick={handleSignOut} className="w-40 p-3 rounded-md glass bg-slate-400 font-bold ">
                         Sign Out
                     </button>
                 ) : (
                  
                     <Link to="/login">
-                        <button className="btn bg-slate-400 font-bold ">Login</button>
+                        <button className="w-40 p-3 rounded-md glass bg-slate-400 font-bold ">Login</button>
                     </Link>
                 )}
       </ul>

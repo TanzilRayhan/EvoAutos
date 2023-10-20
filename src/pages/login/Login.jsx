@@ -1,11 +1,7 @@
-/* eslint-disable no-unused-vars */
+
 import { useContext, useState } from "react";
-import Footer from "../../components/footer/Footer";
-import Navbar from "../../components/navbar/Navbar";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
-
 const Login = () => {
 
   const {signIn} = useContext(AuthContext);
@@ -38,7 +34,7 @@ const Login = () => {
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
-        Swal.fire('Invalid Email/Password/ Try again!!!')
+        setError(error.message);
       });
   };
 

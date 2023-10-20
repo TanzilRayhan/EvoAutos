@@ -2,7 +2,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
 
 const Register = () => {
 
@@ -11,27 +10,29 @@ const Register = () => {
   const navigate = useNavigate();
 
   const [error, setError] = useState("");
-  const handleRegister = e => {
+
+  const handleRegister = (e) => {
     e.preventDefault();
-    const form = e.target;
-    //const name = form.name.value;
-    const email = form.email.value;
-    const password = form.password.value;
+    const form = new FormData(e.currentTarget);
+    const name = form.get("name");
+    const email = form.get("email");
+    const password = form.get("password");
+    console.log(name, email, password);
 
     if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/.test(password)) {
-      Swal.fire('SweetAlert2 is working!')
+      setError("Minimum six characters, at least one letter and one number");
     }
 
-    createUser(email, password)
-      .then(result => {
-        console.log(result.user);
-        navigate(location?.state ? location.state : "/");
-      })
-      .catch(error => {
-        console.error(error);
-      })
-
-  }
+    
+    createUser(email, password,)
+    .then((result) => {
+      console.log(result.user);
+      navigate(location?.state ? location.state : "/");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  };
 
   return (
     <div>
@@ -70,7 +71,10 @@ const Register = () => {
                 </label>
               </div>
               <div>
+              <p className="text-red-500 font-bold"></p>
+              <div>
               <p className="text-red-500 font-bold">{error}</p>
+              </div>
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary bg-slate-600">Register</button>

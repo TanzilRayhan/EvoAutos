@@ -10,6 +10,8 @@ import ErrorPage from "./pages/errorpage/ErrorPage";
 import AuthProvider from "./providers/AuthProvider";
 import Root from "./layout/Root";
 import AddProducts from "./pages/products/AddProducts";
+import PrivateRoute from "./privateroute/PrivateRoute";
+import AllProducts from "./pages/allproducts/AllProducts";
 
 const router = createBrowserRouter([
   {
@@ -31,8 +33,13 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
+        path: "/allProducts",
+        element: <AllProducts></AllProducts>,
+        loader: () => fetch("http://localhost:5000/products")
+      },
+      {
         path: "/addProducts",
-        element: <AddProducts></AddProducts>,
+        element:  <PrivateRoute><AddProducts></AddProducts></PrivateRoute>,
       },
     ],
   },
