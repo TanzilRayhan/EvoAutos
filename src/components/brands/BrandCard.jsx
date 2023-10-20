@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const BrandCard = ({ brandData }) => {
     const { brandName, brandImage } = brandData;
@@ -11,7 +13,9 @@ const BrandCard = ({ brandData }) => {
                         <img className="w-full p-6 h-96" src={brandImage}></img>
                     </figure>
                     <div className="flex justify-center items-center pb-5">
-                        <button className="btn glass w-full text-2xl font-extrabold">{brandName}</button>
+                        <Link className="btn glass w-full " to="/allProducts">
+                        <button className="text-3xl font-extrabold">{brandName}</button>
+                        </Link>
                     </div>
                 </div>
             </div>
