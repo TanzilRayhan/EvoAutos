@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
-const AllProductCard = ({ product }) => {
+const AllProductCard = ({ product,  products, setProducts }) => {
 
     const { _id, name, brandName, type, price, rating, image, description } = product;
 
@@ -33,6 +33,9 @@ const AllProductCard = ({ product }) => {
                                 icon: "success",
                                 confirmButtonText: "Ok"
                             })
+                            
+                            const remaining = products.filter(prod => prod._id !== _id);
+                            setProducts(remaining);
                         }
                     });
             }
