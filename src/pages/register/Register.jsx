@@ -2,6 +2,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Register = () => {
 
@@ -21,6 +22,12 @@ const Register = () => {
 
     if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/.test(password)) {
       setError("Minimum six characters, at least one letter and one number");
+      Swal.fire({
+        title:"Error!!!",
+        text:"Minimum six characters, at least one letter and one number",
+        icon: "error",
+        confirmButtonText: "Ok"
+    })
     }
 
     
@@ -47,7 +54,7 @@ const Register = () => {
             <h1 className="text-5xl font-bold py-5">Register now!</h1>
 
           </div>
-          <div className="card flex-shrink-0 w-96 max-w-sm shadow-2xl bg-sky-950">
+          <div className="card flex-shrink-0 max-w-sm shadow-2xl bg-sky-950">
             <form onSubmit={handleRegister} className="card-body">
               <div className="form-control">
                 <label className="label">
