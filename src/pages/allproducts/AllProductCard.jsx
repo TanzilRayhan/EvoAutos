@@ -43,7 +43,7 @@ const AllProductCard = ({ product,  products, setProducts }) => {
 
     return (
         <div>
-            <div className="card card-side flex flex-col lg:flex-row bg-slate-300 shadow-xl">
+            <div className="card card-side flex flex-col lg:flex-row  bg-slate-300 shadow-xl">
                 <figure className="lg:w-1/2 px-5"><img src={image} /></figure>
                 <div className="flex flex-col lg:flex-row justify-center py-10 items-center ml-10 max-w-xl">
                     <div>

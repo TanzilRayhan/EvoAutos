@@ -10,7 +10,7 @@ const AllProducts = () => {
 
     return (
         <div className="max-w-5xl mx-auto mb-10">
-            <h1 className="text-5xl font-extrabold text-center p-10">Total Products: {allProducts.length}</h1>
+            <h1 className="text-5xl font-extrabold text-slate-500 text-center p-10">Total Products: {allProducts.length}</h1>
             <div className="grid grid-cols-1 px-5 gap-4">
             {
                 allProducts.map(product => <AllProductCard key={product._id} product={product} products={products}  setProducts={setProducts}></AllProductCard>)

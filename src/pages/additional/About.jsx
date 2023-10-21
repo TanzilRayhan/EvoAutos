@@ -3,8 +3,8 @@
 const About = () => {
     return (
         <div>
-            <h1 className="text-5xl py-10 font-bold text-center">About Us - EvoAutos</h1>
-            <div className="max-w-3xl text-center lg:text-left my-5 font-semibold mx-5 lg:mx-auto">
+            <h1 className="text-5xl text-slate-500 py-10 font-bold text-center">About Us - EvoAutos</h1>
+            <div className="max-w-3xl text-slate-500 text-center lg:text-left my-5 font-semibold mx-5 lg:mx-auto">
                 At EvoAutos, we are more than just an automotive brand shop; we're your trusted partner on the road to exceptional driving experiences. Our journey is driven by a passion for automobiles and an unwavering commitment to our customers.
                 <br /><br />
                 Our Expertise: With a team of knowledgeable professionals, we've dedicated ourselves to mastering the intricacies of our automotive brand. Our deep understanding ensures that you receive informed guidance and recommendations at every step of your journey.

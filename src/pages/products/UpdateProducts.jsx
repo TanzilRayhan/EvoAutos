@@ -68,13 +68,13 @@ const UpdateProducts = () => {
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Name</span>
                                     </label>
-                                    <input type="text" name="name" defaultValue={name} placeholder="Enter name" className="input input-bordered" />
+                                    <input type="text" name="name" defaultValue={name} placeholder="Enter name" className="input input-bordered text-slate-600" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Brand Name</span>
                                     </label>
-                                    <input type="text" name="brandName" defaultValue={brandName}  placeholder="Enter brand name" className="input input-bordered" />
+                                    <input type="text" name="brandName" defaultValue={brandName}  placeholder="Enter brand name" className="input input-bordered text-slate-600" />
                                 </div>
                             </div>
                             <div className="lg:flex gap-5">
@@ -82,13 +82,13 @@ const UpdateProducts = () => {
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Type</span>
                                     </label>
-                                    <input type="text" name="type" defaultValue={type}  placeholder="Enter type" className="input input-bordered" />
+                                    <input type="text" name="type" defaultValue={type}  placeholder="Enter type" className="input input-bordered text-slate-600" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Image</span>
                                     </label>
-                                    <input type="text" name="image" defaultValue={image}  placeholder="Enter image url" className="input input-bordered" />
+                                    <input type="text" name="image" defaultValue={image}  placeholder="Enter image url" className="input input-bordered text-slate-600" />
                                 </div>
                             </div>
                             <div className="lg:flex gap-5">
@@ -96,13 +96,13 @@ const UpdateProducts = () => {
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Price</span>
                                     </label>
-                                    <input type="text" name="price" defaultValue={price}  placeholder="Enter price" className="input input-bordered" />
+                                    <input type="text" name="price" defaultValue={price}  placeholder="Enter price" className="input input-bordered text-slate-600" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Rating</span>
                                     </label>
-                                    <input type="text" name="rating" defaultValue={rating}  placeholder="Enter rating" className="input input-bordered" />
+                                    <input type="text" name="rating" defaultValue={rating}  placeholder="Enter rating" className="input input-bordered text-slate-600" />
                                 </div>
                             </div>
 
@@ -111,7 +111,7 @@ const UpdateProducts = () => {
                                 <label className="label">
                                     <span className="label-text text-xl font-bold text-white">Short Description</span>
                                 </label>
-                                <input type="text" name="description" placeholder="Enter short description" className="input input-bordered w-full h-16" />
+                                <input type="text" name="description" placeholder="Enter short description" className="input input-bordered w-full h-16 text-slate-600" />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover font-bold text-white pt-2">Forgot password?</a>
                                 </label>

@@ -13,8 +13,8 @@ const BrandCard = ({brandData}) => {
                         <img className="w-full p-6 h-96" src={brandImage}></img>
                     </figure>
                     <div className="flex justify-center items-center pb-5">
-                        <Link className="btn glass w-full " to="/allProducts">
-                        <button className="text-3xl font-extrabold">{brandName}</button>
+                        <Link className="btn glass w-full " to={`/brands/${brandName}`}>
+                        <button className="text-3xl text-slate-500 font-extrabold">{brandName}</button>
                         </Link>
                     </div>
                 </div>
