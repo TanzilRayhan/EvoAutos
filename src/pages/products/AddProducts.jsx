@@ -21,7 +21,7 @@ const AddProducts = () => {
         console.log(newProducts);
 
         //send data to the server
-        fetch("http://localhost:5000/products", {
+        fetch("https://evo-autos-server-pu39k5ogs-tanzilrayhans-projects.vercel.app/products", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -50,14 +50,14 @@ const AddProducts = () => {
                         "url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1770)",
                 }}>
                 <div className="hero-overlay bg-opacity-60"></div>
-                <div className="flex-col ">
+                <div className="lg:flex-col ">
                     <div className="text-center text-white">
                         <h1 className="text-5xl py-3 font-bold">Add Cars</h1>
 
                     </div>
                     <div className="w-full p-10 rounded-xl shadow-2xl bg-sky-950 mb-10">
                         <form onSubmit={handleAddProduct}>
-                            <div className="flex gap-5">
+                            <div className="lg:flex gap-5">
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Name</span>
@@ -71,7 +71,7 @@ const AddProducts = () => {
                                     <input type="text" name="brandName" placeholder="Enter brand name" className="input input-bordered" required />
                                 </div>
                             </div>
-                            <div className="flex gap-5">
+                            <div className="lg:flex gap-5">
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Type</span>
@@ -85,7 +85,7 @@ const AddProducts = () => {
                                     <input type="text" name="image" placeholder="Enter image url" className="input input-bordered" required />
                                 </div>
                             </div>
-                            <div className="flex gap-5">
+                            <div className="lg:flex gap-5">
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-xl font-bold text-white">Price</span>

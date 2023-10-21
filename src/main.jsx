@@ -15,6 +15,7 @@ import AddProducts from "./pages/products/AddProducts";
 import PrivateRoute from "./privateroute/PrivateRoute";
 import AllProducts from "./pages/allproducts/AllProducts";
 import UpdateProducts from "./pages/products/UpdateProducts";
+import About from "./pages/additional/About";
 
 const router = createBrowserRouter([
   {
@@ -36,9 +37,13 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
         path: "/allProducts",
         element: <AllProducts></AllProducts>,
-        loader: () => fetch("http://localhost:5000/products")
+        loader: () => fetch("https://evo-autos-server-pu39k5ogs-tanzilrayhans-projects.vercel.app/products")
       },
       {
         path: "/addProducts",
@@ -47,7 +52,7 @@ const router = createBrowserRouter([
       {
         path: "/updateProducts/:id",
         element:  <PrivateRoute><UpdateProducts></UpdateProducts></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({params}) => fetch(`https://evo-autos-server-pu39k5ogs-tanzilrayhans-projects.vercel.app/products/${params.id}`)
       }
     ],
   },

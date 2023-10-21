@@ -16,6 +16,7 @@ const Navbar = () => {
       <li><NavLink className="font-bold" to="/">Home</NavLink></li>
       <li><NavLink className="font-bold" to="/allProducts">All Products</NavLink></li>
       <li><NavLink className="font-bold" to="/addProducts">Add Products</NavLink></li>
+      <li><NavLink className="font-bold" to="/about">About Us</NavLink></li>
     </>
   )
 
@@ -31,7 +32,7 @@ const Navbar = () => {
         {navLinks}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl"><img className="w-40" src="./../../../public/EVOAUTOS.png" alt="" /></a>
+    <a className="btn btn-ghost normal-case text-xl"><img className="w-40" src="https://i.ibb.co/twRVxTV/EVOAUTOS.png" alt="" /></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
