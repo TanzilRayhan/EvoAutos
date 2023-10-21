@@ -34,7 +34,7 @@ const Slider = () => {
           <div className="hero-content absolute text-center text-neutral-content">
             <div className="max-w-3xl">
               <div className=" spaceGrotesk mx-auto px-5 lg:px-0 text-center">
-                <h1 className="text-4xl lg:text-6xl text-center font-bold py-5 text-white">
+                <h1 className="text-2xl lg:text-6xl text-center font-bold py-5 text-white">
                   Welcome To EvoAutos
                 </h1>
                 <p className="text-xs lg:text-base font-semibold pt-5 pb-10 text-grey-300">
@@ -53,7 +53,7 @@ const Slider = () => {
           <div className="hero-content absolute text-center text-neutral-content">
             <div className="max-w-3xl">
               <div className=" spaceGrotesk mx-auto px-5 lg:px-0 text-center">
-                <h1 className="text-4xl lg:text-6xl text-center font-bold py-5 text-white">
+                <h1 className="text-2xl lg:text-6xl text-center font-bold py-5 text-white">
                   Welcome To EvoAutos
                 </h1>
                 <p className="text-xs lg:text-base font-semibold pt-5 pb-10 text-grey-300">
@@ -72,7 +72,7 @@ const Slider = () => {
           <div className="hero-content absolute text-center text-neutral-content">
             <div className="max-w-3xl">
               <div className=" spaceGrotesk mx-auto px-5 lg:px-0 text-center">
-                <h1 className="text-4xl lg:text-6xl text-center font-bold py-5 text-white">
+                <h1 className="text-2xl lg:text-6xl text-center font-bold py-5 text-white">
                   Welcome To EvoAutos
                 </h1>
                 <p className="text-xs lg:text-base font-semibold pt-5 pb-10 text-grey-300">
