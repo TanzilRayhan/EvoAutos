@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 
 const WhyUs = () => {
     return (
@@ -11,7 +12,7 @@ const WhyUs = () => {
               <div className=" mx-auto">
                 <h1 className="text-4xl lg:text-5xl font-bold">Why Choose Us?</h1>
                 <p className="py-6 lg:text-lg">
-                At Spectrum Events, we stand out for our unwavering commitment to excellence. With a track record of success spanning diverse industries, we offer tech-forward solutions that redefine event experiences. Our creative touch ensures your event is not just managed but transformed into an extraordinary moment. We prioritize your success through a client-centric approach, end-to-end services, and transparent communication. Choose Spectrum Events for an event management partner that adapts, innovates, and delivers beyond expectations.
+                EVOAUTOS is your ultimate destination for automotive excellence. Our team's unmatched brand expertise ensures you receive the most informed guidance. Explore our diverse range of vehicles in our immersive showroom, and benefit from personalized customer service, competitive financing options, and reliable maintenance and service support. We are committed to sustainability, actively engage with our community, and offer transparent, fair pricing. Join our satisfied customers and choose EVOAUTOS for an exceptional automotive experience.
                 </p>
                 <h3 className="font-bold">-Tanzil Rayhan, CEO</h3>
               </div>

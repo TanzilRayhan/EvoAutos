@@ -58,7 +58,7 @@ const UpdateProducts = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="flex-col ">
                     <div className="text-center text-white">
-                        <h1 className="text-5xl py-3 font-bold">Update Cars: {name}</h1>
+                        <h1 className="text-5xl py-3 font-bold">Update Car: {name}</h1>
 
                     </div>
                     <div className="w-full p-10 rounded-xl shadow-2xl bg-sky-950 mb-10">

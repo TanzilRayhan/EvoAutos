@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -65,11 +64,11 @@ const AllProductCard = ({ product,  products, setProducts }) => {
 
                     <div className="card-actions px-4 justify-end">
                         <div className="btn-group lg:btn-group-vertical pt-5 lg:space-y-3">
-                            <button className="btn btn-info ">VIEW</button>
+                            <button className="btn  btn-info ">VIEW</button>
                             <Link to={`/updateProducts/${_id}`}>
-                                <button className="btn btn-neutral">EDIT</button>
+                                <button className="btn btn-neutral w-full rounded-none">EDIT</button>
                             </Link>
-                            <button onClick={() => handleDelete(_id)} className="btn btn-error">DELETE</button>
+                            <button onClick={() => handleDelete(_id)} className="btn btn-error ">DELETE</button>
                         </div>
                     </div>
                 </div>

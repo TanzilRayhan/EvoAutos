@@ -1,11 +1,14 @@
+/* eslint-disable no-unused-vars */
 
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 const Login = () => {
 
-  const {signIn} = useContext(AuthContext);
-  const {googleSignIn} = useContext(AuthContext);
+  const { signIn } = useContext(AuthContext);
+  const { googleSignIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const [error, setError] = useState("");
@@ -25,16 +28,21 @@ const Login = () => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
-    const photo = form.get("photo");
     const password = form.get("password");
     console.log(email, password);
-    signIn(email, password, photo)
+    signIn(email, password)
       .then((result) => {
         console.log(result.user);
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
-        setError(error.message);
+        Swal.fire({
+          title: "Warning!!!",
+          text: error.message,
+          icon: "error",
+          confirmButtonText: "Ok"
+        })
+        //setError(error.message);
       });
   };
 
@@ -51,7 +59,7 @@ const Login = () => {
         <div className="hero-content flex-col ">
           <div className="text-center text-white">
             <h1 className="text-5xl py-5 font-bold">Login now!</h1>
-        
+
           </div>
           <div className="card flex-shrink-0 w-96 max-w-md shadow-2xl bg-sky-950">
             <form onSubmit={handleLogin} className="card-body ">
@@ -59,13 +67,13 @@ const Login = () => {
                 <label className="label">
                   <span className="label-text text-xl font-bold text-white">Email</span>
                 </label>
-                <input type="email" placeholder="Enter email" className="input input-bordered" required />
+                <input type="email" name="email" placeholder="Enter email" className="input input-bordered" required />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-xl font-bold text-white">Password</span>
                 </label>
-                <input type="password" placeholder="Enter password" className="input input-bordered" required />
+                <input type="password" name="password" placeholder="Enter password" className="input input-bordered" required />
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover font-bold text-white pt-2">Forgot password?</a>
                 </label>
@@ -77,22 +85,22 @@ const Login = () => {
                 <button className="btn btn-primary bg-slate-600">Login</button>
               </div>
               <p className="text-white">
-              Do not have an account? Please{" "}
-              <Link to="/register">
-              <button className="btn-link font-bold">Register</button>
-              </Link>
-            </p>
+                Do not have an account? Please{" "}
+                <Link to="/register">
+                  <button className="btn-link font-bold">Register</button>
+                </Link>
+              </p>
             </form>
             <div className="flex justify-center pb-5">
-            <button onClick={handleGoogle} className="btn">
-              <img
-                className="w-5"
-                src="https://i.ibb.co/b2CSKK1/Pik-Png-com-google-icon-png-344234.png "
-                alt=""
-              />
-              Sign in with Google
-            </button>
-          </div>
+              <button onClick={handleGoogle} className="btn">
+                <img
+                  className="w-5"
+                  src="https://i.ibb.co/b2CSKK1/Pik-Png-com-google-icon-png-344234.png "
+                  alt=""
+                />
+                Sign in with Google
+              </button>
+            </div>
           </div>
         </div>
       </div>
