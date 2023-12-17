@@ -12,10 +12,10 @@ const Banner = () => {
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-3xl">
             <div className=" spaceGrotesk mx-auto px-5 lg:px-0 text-center">
-              <h1 className="text-4xl lg:text-6xl text-center font-bold py-5 text-white">
-                Welcome To EvoAutos
+              <h1 className="text-4xl lg:text-5xl text-center font-bold py-5 text-white">
+                EvoAutos - Find your vehicles
               </h1>
-              <p className="text-xs lg:text-base font-semibold pt-5 pb-10 text-grey-300">
+              <p className="text-xs lg:text-base font-semibold pt-5 pb-10 text-gray-200">
                 An automotive brand shop is a retail establishment dedicated to
                 showcasing and selling vehicles from a specific automotive
                 brand. The showroom often features a range of vehicles, from

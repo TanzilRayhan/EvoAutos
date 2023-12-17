@@ -3,7 +3,7 @@
 const Clients = () => {
   return (
     <div>
-      <div className="hero my-20 text-slate-600">
+      <div className="hero my-20 text-slate-500">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src="https://i.ibb.co/hCNXXjt/about-company.png"

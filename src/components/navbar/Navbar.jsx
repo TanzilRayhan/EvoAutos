@@ -24,7 +24,7 @@ const Navbar = () => {
   )
 
   return (
-    <div className="max-w-7xl spaceGrotesk mx-auto">
+    <div className="max-w-7xl mx-auto">
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown z-50">
@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex justify-center">
-            <select className="w-16 lg:w-20 rounded-lg text-slate-500 text-center" data-choose-theme>
+            <select className="w-16 rounded-lg text-slate-500 text-center mr-3" data-choose-theme>
               <option disabled value="">
                 Pick a theme
               </option>

@@ -3,7 +3,7 @@
 const WhyUs = () => {
     return (
         <div>
-            <div className="hero my-20 text-slate-600">
+            <div className="hero my-20 text-slate-500">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <img
                 src="https://i.ibb.co/z4MSqkf/360-F-141523101-8umyxdkp-KIq-Fg-VIm-Rhc-WNw-H9-Gg5-TBu29.jpg"

@@ -3,8 +3,6 @@ import Banner from "../../components/banner/Banner";
 import Clients from "../../components/sections/Clients";
 import WhyUs from "../../components/sections/WhyUs";
 import BrandCard from "../../components/brands/BrandCard";
-//import Slider from "../../components/slider/Slider";
-
 
 const Home = () => {
     const brandData = useLoaderData()
